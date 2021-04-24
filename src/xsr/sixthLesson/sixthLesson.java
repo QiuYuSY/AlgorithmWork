@@ -1,4 +1,4 @@
-package xsr;
+package xsr.sixthLesson;
 
 import java.util.Arrays;
 
