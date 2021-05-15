@@ -58,7 +58,7 @@ public class eighthLesson {
         int[][] s=new int[6][6];
         eighthLesson el=new eighthLesson(p,arr,s);
         s=el.matrixChain();
-        System.out.println("最少乘法计算次数是"+mc.arr[0][5]);
+        System.out.println("最少乘法计算次数是"+arr[0][5]);
         System.out.println("按照如下格式计算可获得最优解");
         el.show(s,0,5);
     }
