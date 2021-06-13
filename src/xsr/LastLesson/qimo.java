@@ -25,10 +25,10 @@ public class qimo {
 
         for(int i = 1; i < time.length; i++){
             for(int j = 1; j <= mid; j++){
-                if(j - time[i] >= 0)
-                    sum[i][j] = Math.max(sum[i-1][j], sum[i-1][j-time[i]]+time[i]);
-                else
+                if(j - time[i] < 0)
                     sum[i][j] = sum[i-1][j];
+                else
+                    sum[i][j] = Math.max(sum[i-1][j], sum[i-1][j-time[i]]+time[i]);
             }
         }
 
